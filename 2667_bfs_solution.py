@@ -25,8 +25,8 @@ n = int(input())
 map = [list(map(int, input().strip())) for _ in range(n)]
 check = [[False] * n for _ in range(n)]
 
-dy = [1,0,-1,0]
-dx = [0,-1,0,1]
+dy = [0,1,0,-1]
+dx = [1,0,-1,0]
 
 def bfs(y: int, x: int):
     rs = 1
