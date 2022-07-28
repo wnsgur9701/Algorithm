@@ -18,6 +18,7 @@ import sys
 
 input = sys.stdin.readline
 
+# 문자열을 입력 받는 것으로 처리 되기 때문에 int로 형 변환을 해줘야 한다.
 n, m = map(int, input().split())
 map = [list(map(int, input().split())) for _ in range(n)]
 check = [[False] * m for _ in range(n)]
